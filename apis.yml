@@ -1,23 +1,143 @@
 aid: ciq
+
 name: CIQ
-description: 'CIQ is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://ciq.com/og-image.png
+
+description: CIQ provides a sovereign AI infrastructure platform built on Rocky Linux, offering secure, scalable solutions for enterprises, research
+  institutions, and government agencies. Their product suite includes Rocky Linux Pro, Fuzzball, Warewulf Pro, Ascender Pro, and CIQ Bridge, along
+  with long‑term support and migration services. CIQ focuses on open‑source ethos and partnerships with NVIDIA, AMD, and others, delivering a
+  full stack for AI at scale.
+
 url: https://raw.githubusercontent.com/api-evangelist/ciq/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-08 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-08'
+
 modified: '2026-10-08'
+
 tags:
-- Company
-apis: []
+- AI
+- Infrastructure
+- Open-Source
+- Enterprise
+- Cloud
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: TermsOfService
+  url: https://ciq.com/legal/terms-of-use/
+- type: Plans
+  url: plans/ciq-plans-pricing.yml
+- type: Spectral
+  url: rules/ciq-rules.yml
+- type: JSONLD
+  url: json-ld/ciq-context.jsonld
+- type: Vocabulary
+  url: vocabulary/ciq-vocabulary.yml
+- type: DataModel
+  url: data-model/ciq-data-model.yml
+- type: ChangeLog
+  url: changelog/ciq-changelog.yml
+- type: Authentication
+  url: authentication/ciq-authentication.yml
+- type: Conformance
+  url: conformance/ciq-conformance.yml
+- type: LLMsTxt
+  url: llms/ciq-llms.txt
+- type: SecurityTxt
+  url: well-known/ciq-security.txt
+- type: SecurityTxt
+  url: well-known/ciq-internal-security.txt
+- type: WellKnown
+  url: well-known/ciq-well-known.yml
+- type: Hosts
+  url: hosts/ciq-hosts.yml
+- type: Vendors
+  url: vendors/ciq-vendors.yml
+- type: Security
+  url: https://ciq.com/security
+- type: Newsroom
+  url: https://ciq.com/press
+- type: Leadership
+  url: https://ciq.com/company/leadership
+- type: GitHubOrganization
+  url: https://github.com/ctrliq
+- type: DeveloperPortal
+  url: https://portal.ciq.com/?ref=resources&ref_cta=portal_home
+- type: GettingStarted
+  url: https://docs.ciq.com/ciq-bridge/getting-started
+- type: VulnerabilityDisclosure
+  url: security/ciq-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/ciq-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://ciq.com/
+- type: Documentation
+  url: https://docs.ciq.com
+- type: Blog
+  url: https://ciq.com/blog
+- type: Pricing
+  url: https://ciq.com/pricing
+- type: PrivacyPolicy
+  url: https://ciq.com/legal/privacy-policy
+
+apis:
+- name: CIQ API
+  description: API documentation is hosted at docs.ciq.com, but no machine‑readable contract was discovered.
+  humanURL: https://docs.ciq.com
+  baseURL: null
+  x-coverage:
+    state: unreadable
+    reason: no-machine-readable-spec
+    detail: Attempted to fetch OpenAPI at https://docs.ciq.com/openapi.json and received 404.
+    evidence:
+    - url: https://docs.ciq.com/openapi.json
+      status: 404
+    checked: '2026-10-08'
+  aid: ciq:ciq-api-2
+- aid: ciq:ciq-api
+  name: CIQ API
+  description: 'CIQ API as documented publicly: 11 operations. Contract generated from the documentation by API Evangelist (2026-10-08); not the
+
+    provider''s own document.'
+  humanURL: https://docs.ciq.com/elm/admin-guides/api
+  baseURL: https://depot.ciq.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/ciq-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/ciq-get-v1-models-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-10-08'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://ciq.com/
+    status: 200
+  - url: https://www.nasdaqprivatemarket.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-08'
+  status: enriched
+  artifacts_added: 24
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

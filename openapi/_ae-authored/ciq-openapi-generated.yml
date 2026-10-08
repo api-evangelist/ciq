@@ -1,0 +1,219 @@
+openapi: 3.1.0
+info:
+  title: CIQ API
+  version: '2026-10-08'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-08: 11 operation(s) read from 9 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; CIQ has published no machine-readable contract that the pipeline
+    could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 4
+    documentation: 7
+    pages-with-code: 9
+    pages-read: 9
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-08'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.ciq.com/elm/admin-guides/api
+  - https://docs.ciq.com/rlc-h/getting-started
+  - https://docs.ciq.com/rlc-ai/getting-started
+  - https://docs.ciq.com/ciq-portal/getting-started
+  - https://docs.ciq.com/depot/depot-client/get-started/containers
+  - https://docs.ciq.com/elm/admin-guides/hosts-and-groups
+  - https://docs.ciq.com/fuzzball/advanced-features/serving-a-model
+  - https://docs.ciq.com/fuzzball/advanced-features/opencode-access
+  - https://docs.ciq.com/fuzzball/workflow-catalog/creating
+servers:
+- url: https://depot.ciq.com
+paths:
+  /:
+    get:
+      operationId: get
+      tags:
+      - Api
+      summary: GET /
+      x-source: https://docs.ciq.com/elm/admin-guides/api
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -su <username>:<password> http://<elm-server>:8080/api/v1/\n Resources follow standard REST conventions - list and create\
+          \ on the collection, retrieve and update on the individual resource - and respond with JSON. Because the API is browsable, you can also\
+          \ explore it in a browser while signed in to the web interface. \n Example - list sources: "
+  /agent/install.sh:
+    get:
+      operationId: get_agent_install_sh
+      tags:
+      - Agent
+      summary: Install the agent
+      x-source: https://docs.ciq.com/elm/admin-guides/hosts-and-groups
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v1/:
+    get:
+      operationId: get_api_v1
+      tags:
+      - Api
+      summary: Request the index at /api/v1/ to list the available resources.
+      x-source: https://docs.ciq.com/elm/admin-guides/api
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v1/sources/:
+    get:
+      operationId: get_api_v1_sources
+      tags:
+      - Api
+      summary: Example - list sources.
+      x-source: https://docs.ciq.com/elm/admin-guides/api
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /data:
+    get:
+      operationId: get_data
+      tags:
+      - Data
+      summary: GET /data
+      x-source: https://docs.ciq.com/fuzzball/workflow-catalog/creating
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl {{.ApiEndpoint}}\n {{- end}}\n When ApiToken is supplied, its value is a secret reference ( secret://<scope>/<name> ),\
+          \ so\n API_TOKEN={{.ApiToken}} becomes an environment-variable secret that Fuzzball resolves into the\njob's API_TOKEN variable. When\
+          \ it is left blank, the {{if .ApiToken}} guard omits the env \nblock entirely and the request runs without authentication. \n Warning\
+          \ Environment-variab"
+  /dlv2/rlc-9.7-ai-images/genericcloud/x86_64/RLC-PRO-AI-<release-date>-GenericCloud-x86_64.qcow2:
+    get:
+      operationId: get_dlv2_rlc_9_7_ai_images_genericcloud_x86_64_RLC_PRO_AI_release_date_GenericCl
+      tags:
+      - Dlv2
+      summary: How to deploy RLC Pro AI
+      x-source: https://docs.ciq.com/rlc-ai/getting-started
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /dlv2/rlc-9.7-ai-images/genericcloud/x86_64/RLC-PRO-AI-<release-date>-GenericCloud-x86_64.qcow2.sha256sum:
+    get:
+      operationId: get_dlv2_rlc_9_7_ai_images_genericcloud_x86_64_RLC_PRO_AI_release_date_GenericCl
+      tags:
+      - Dlv2
+      summary: How to deploy RLC Pro AI
+      x-source: https://docs.ciq.com/rlc-ai/getting-started
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /dlv2/rlc-9.7-hardened-images/iso/x86_64/rlc-pro-h-9-<release-date>-x86_64-live.iso:
+    get:
+      operationId: get_dlv2_rlc_9_7_hardened_images_iso_x86_64_rlc_pro_h_9_release_date_x86_64_live
+      tags:
+      - Dlv2
+      summary: Getting Started with RLC Pro Hardened
+      x-source: https://docs.ciq.com/rlc-h/getting-started
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /dlv2/rlc-9.7-hardened-images/iso/x86_64/rlc-pro-h-9-<release-date>-x86_64-live.iso.sha256sum:
+    get:
+      operationId: get_dlv2_rlc_9_7_hardened_images_iso_x86_64_rlc_pro_h_9_release_date_x86_64_live
+      tags:
+      - Dlv2
+      summary: Getting Started with RLC Pro Hardened
+      x-source: https://docs.ciq.com/rlc-h/getting-started
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /path/to/your/file:
+    get:
+      operationId: get_path_to_your_file
+      tags:
+      - Path
+      summary: GET /path/to/your/file
+      x-source: https://docs.ciq.com/ciq-portal/getting-started
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -u YOUR_USERNAME:YOUR_TOKEN -O https://depot.ciq.com/path/to/your/file\n wget --user=YOUR_USERNAME --password=YOUR_TOKEN\
+          \ https://depot.ciq.com/path/to/your/file\n Other Methods \n Depot Client : Automated repository configuration \n Rsync : Mirror repositories\
+          \ locally \n Reposync : Mirror via DNF/YUM \n Red Hat Satellite : Satellite integration \n Cloud Marketplace Customers Images purchased\
+          \ through"
+  /v1/models:
+    get:
+      operationId: get_v1_models
+      tags:
+      - Models
+      summary: GET /v1/models
+      x-source: https://docs.ciq.com/fuzzball/advanced-features/serving-a-model
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetV1ModelsResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -H \"Authorization: Bearer YOUR-FUZZBALL-TOKEN\"  -H \"x-litellm-api-key: sk-fb-YOUR-API-KEY\"  https://ENDPOINT-URL/v1/models\n\
+          \ A healthy response names the model: \n {\"data\":[{\"id\":\"openai/gpt-oss-20b\",\"object\":\"model\",\"created\":1677610602,\"owned_by\"\
+          :\"openai\"}],\"object\":\"list\"}\n An endpoint started with Scope=public needs only the API key, and is served without any\nFuzzball\
+          \ authentication, so use"
+components:
+  schemas:
+    GetV1ModelsResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              object:
+                type: string
+              created:
+                type: integer
+              owned_by:
+                type: string
+        object:
+          type: string
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+security:
+- bearer: []
+tags:
+- name: Agent
+- name: Api
+- name: Data
+- name: Dlv2
+- name: Models
+- name: Path

@@ -1,0 +1,34 @@
+generated: '2026-10-08'
+method: searched
+source: https://ciq.com/legal/privacy-policy
+signals:
+  data_subject_request:
+    quote: "The individual using this Website who, unless otherwise specified, coincides with the Data Subject."
+    url: https://ciq.com/legal/privacy-policy
+    section: "Data Subject"
+    note: Defines the data subject, establishing the right to request access, correction, deletion.
+    evidence:
+      - source: https://ciq.com/legal/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "The individual using this Website who, unless otherwise specified, coincides with the Data Subject."
+  data_retention:
+    quote: "Once the retention period expires, Personal Data shall be deleted. Therefore, the right of access, the right to erasure, the right to rectification and the right to data portability cannot be enforced after expiration of the retention period."
+    url: https://ciq.com/legal/privacy-policy
+    section: "Retention period"
+    note: States that data is deleted after the retention period, indicating a data retention policy.
+    evidence:
+      - source: https://ciq.com/legal/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "Once the retention period expires, Personal Data shall be deleted. Therefore, the right of access, the right to erasure, the right to rectification and the right to data portability cannot be enforced after expiration of the retention period."
+  global_privacy_control:
+    quote: "If you want to submit requests to opt out of Sale or Sharing and Targeted Advertising activities via a user-enabled global privacy control (GPC), you are free to do so and we will abide by such request in a frictionless manner."
+    url: https://ciq.com/legal/privacy-policy
+    section: "How to exercise your rights to opt out"
+    note: Acknowledges Global Privacy Control requests.
+    evidence:
+      - source: https://ciq.com/legal/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "If you want to submit requests to opt out of Sale or Sharing and Targeted Advertising activities via a user-enabled global privacy control (GPC), you are free to do so and we will abide by such request in a frictionless manner."

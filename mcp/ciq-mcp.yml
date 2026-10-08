@@ -1,0 +1,59 @@
+generated: '2026-10-08'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/ciq-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: No MCP server was found. The pre-flight posted tools/list to /mcp on api.ciq.com, docs.ciq.com, ciq.com, c3.ciq.com; verdict absent. Candidate
+  tools below are derived from the 9 operation(s) in the provider's own OpenAPI (9 listed); they describe what a server WOULD expose, not one
+  that exists.
+tools:
+- name: get
+  operationId: get
+  method: GET
+  path: /
+  description: GET /
+- name: get_agent_install_sh
+  operationId: get_agent_install_sh
+  method: GET
+  path: /agent/install.sh
+  description: Install the agent
+- name: get_api_v1
+  operationId: get_api_v1
+  method: GET
+  path: /api/v1/
+  description: Request the index at /api/v1/ to list the available resources.
+- name: get_api_v1_sources
+  operationId: get_api_v1_sources
+  method: GET
+  path: /api/v1/sources/
+  description: Example - list sources.
+- name: get_data
+  operationId: get_data
+  method: GET
+  path: /data
+  description: GET /data
+- name: get_dlv2_rlc_9_7_ai_images_genericcloud_x86_64_rlc_pro_ai_re
+  operationId: get_dlv2_rlc_9_7_ai_images_genericcloud_x86_64_RLC_PRO_AI_release_date_GenericCl
+  method: GET
+  path: /dlv2/rlc-9.7-ai-images/genericcloud/x86_64/RLC-PRO-AI-<release-date>-GenericCloud-x86_64.qcow2
+  description: How to deploy RLC Pro AI
+- name: get_dlv2_rlc_9_7_hardened_images_iso_x86_64_rlc_pro_h_9_rele
+  operationId: get_dlv2_rlc_9_7_hardened_images_iso_x86_64_rlc_pro_h_9_release_date_x86_64_live
+  method: GET
+  path: /dlv2/rlc-9.7-hardened-images/iso/x86_64/rlc-pro-h-9-<release-date>-x86_64-live.iso
+  description: Getting Started with RLC Pro Hardened
+- name: get_path_to_your_file
+  operationId: get_path_to_your_file
+  method: GET
+  path: /path/to/your/file
+  description: GET /path/to/your/file
+- name: get_v1_models
+  operationId: get_v1_models
+  method: GET
+  path: /v1/models
+  description: GET /v1/models

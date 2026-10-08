@@ -1,0 +1,25 @@
+generated: '2026-10-08'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.ciq.com/rlc-h/security/fips/mode-switching
+sources:
+- https://docs.ciq.com/rlc-h/security/fips/mode-switching
+- https://docs.ciq.com/ciq-bridge/security
+- https://docs.ciq.com/rlc/fips
+standards:
+- id: fapi
+  conforms: false
+  evidence: RLC Pro provides access to FIPS 140-3 cryptographic modules for deployments that require federal compliance.
+- id: openapi-3.1
+  conforms: true
+  evidence: the document declares 3.1.0
+- id: oauth2
+  conforms: false
+  evidence: 'securitySchemes: bearer (http)'
+- id: rfc9457
+  conforms: false
+  evidence: no response declares application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no idempotency key parameter on mutating operations
+docs: https://docs.ciq.com/rlc-h/security/fips/mode-switching

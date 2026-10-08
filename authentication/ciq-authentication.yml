@@ -1,0 +1,20 @@
+generated: '2026-10-08'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.ciq.com/ascender-pro/admin-guides/saml
+sources:
+- https://docs.ciq.com/ascender-pro/admin-guides/saml
+- https://docs.ciq.com/elm/admin-guides/authentication
+- https://docs.ciq.com/fuzzball/appendices/web-ui-tunnel/visit-site
+- https://docs.ciq.com/fuzzball/sdk/sdk-auth
+description: Authentication methods documented for CIQ products
+schemes:
+- type: other
+  name: SAML 2.0
+  evidence: With SAML configured, ELM acts as a Service Provider and delegates authentication to your identity provider (IdP).
+- type: http-basic
+  name: HTTP Basic
+  evidence: 'Authenticate API requests with a session or HTTP Basic auth: API .'
+  location: header
+  header: Authorization
+docs: https://docs.ciq.com/ascender-pro/admin-guides/saml

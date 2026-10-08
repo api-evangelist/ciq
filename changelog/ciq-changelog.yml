@@ -1,0 +1,38 @@
+generated: '2026-10-08'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.ciq.com/ascender-pro/release-notes
+sources:
+- https://docs.ciq.com/ascender-pro/release-notes
+- https://docs.ciq.com/ascender-pro/release-notes/v1.0.0
+- https://docs.ciq.com/ascender-pro/release-notes/v1.0.1
+- https://docs.ciq.com/ascender-pro/release-notes/v1.0.2
+entries:
+- breaking: false
+  date: '2026-02-18'
+- breaking: false
+  date: '2026-02-03'
+- breaking: false
+  date: '2026-01-06'
+- breaking: false
+  date: '2025-12-23'
+- breaking: false
+  date: '2025-07-01'
+- breaking: false
+  date: '2025-06-02'
+- breaking: false
+  date: '2025-05-19'
+- breaking: false
+  date: '2025-04-30'
+- breaking: false
+  date: '2025-04-16'
+- breaking: false
+  highlights:
+  - Initial release of Ascender Pro
+  - 'Alert providers: Email and Webhook (GitHub format, GitLab format, Bare Authorization)'
+  - Alerts with filter and provider association, enable/disable support
+  - Support for deployment on K3S, Kubernetes, EKS, GKE, and RKE
+  date: '2025-04-15'
+current_version: v1.0.9
+note: Versioning scheme follows semantic versioning (MAJOR.MINOR.PATCH).
+docs: https://docs.ciq.com/ascender-pro/release-notes

@@ -1,0 +1,1 @@
+{"resource":"https://portal.ciq.com/mcp","authorization_servers":["https://portal.ciq.com"],"scopes_supported":["mcp"],"bearer_methods_supported":["header"]}

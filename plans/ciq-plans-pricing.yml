@@ -1,0 +1,78 @@
+generated: '2026-10-08'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://ciq.com/pricing
+sources:
+- https://ciq.com/pricing
+- https://docs.ciq.com/fuzzball/cloud-admin-guide/billing
+- https://docs.ciq.com/fuzzball/cloud-admin-guide/billing/per-workflow-charges
+name: CIQ pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: RLC Pro Self Support
+  price_text: $350 / node / yr
+  price: 350
+  description: Commercially guaranteed Linux OS
+- name: RLC Pro Standard Support
+  price_text: $600 / node / yr
+  price: 600
+  description: Commercially guaranteed Linux OS
+- name: RLC Pro Premium Support
+  price_text: $825 / node / yr
+  price: 825
+  description: Commercially guaranteed Linux OS
+- name: RLC Pro Hardened Self Support
+  price_text: Not available in this tier
+  description: Proactive security hardening
+- name: RLC Pro Hardened Standard Support
+  price_text: $775 / node / yr
+  price: 775
+  description: Proactive security hardening
+- name: RLC Pro Hardened Premium Support
+  price_text: $1,000 / node / yr
+  price: 1000
+  description: Proactive security hardening
+- name: RLC Pro AI Self Support
+  price_text: Not available in this tier
+  description: AI-optimized Rocky Linux
+- name: RLC Pro AI Standard Support
+  price_text: $775 / node / yr
+  price: 775
+  description: AI-optimized Rocky Linux
+- name: RLC Pro AI Premium Support
+  price_text: $1,000 / node / yr
+  price: 1000
+  description: AI-optimized Rocky Linux
+- name: Fuzzball Self Support
+  price_text: Contact sales
+  description: Orchestration platform for AI and HPC workloads
+- name: Fuzzball Standard Support
+  price_text: Contact sales
+  description: Orchestration platform for AI and HPC workloads
+- name: Fuzzball Premium Support
+  price_text: Contact sales
+  description: Orchestration platform for AI and HPC workloads
+- name: Warewulf Pro Self Support
+  price_text: Not available in this tier
+  description: Turnkey, stateless provisioning
+- name: Warewulf Pro Standard Support
+  price_text: $250 / node / yr
+  price: 250
+  description: Turnkey, stateless provisioning
+- name: Warewulf Pro Premium Support
+  price_text: $400 / node / yr
+  price: 400
+  description: Turnkey, stateless provisioning
+- name: Ascender Pro Self Support
+  price_text: Not available in this tier
+  description: Enterprise Ansible automation
+- name: Ascender Pro Standard Support
+  price_text: $100 / node / yr
+  price: 100
+  description: Enterprise Ansible automation
+- name: Ascender Pro Premium Support
+  price_text: $150 / node / yr
+  price: 150
+  description: Enterprise Ansible automation
+docs: https://ciq.com/pricing
