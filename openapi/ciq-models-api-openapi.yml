@@ -1,0 +1,75 @@
+openapi: 3.2.0
+info:
+  title: CIQ Models API
+  version: '2026-10-08'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-08: 11 operation(s) read from 9 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; CIQ has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 4
+    documentation: 7
+    pages-with-code: 9
+    pages-read: 9
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-08'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.ciq.com/elm/admin-guides/api
+  - https://docs.ciq.com/rlc-h/getting-started
+  - https://docs.ciq.com/rlc-ai/getting-started
+  - https://docs.ciq.com/ciq-portal/getting-started
+  - https://docs.ciq.com/depot/depot-client/get-started/containers
+  - https://docs.ciq.com/elm/admin-guides/hosts-and-groups
+  - https://docs.ciq.com/fuzzball/advanced-features/serving-a-model
+  - https://docs.ciq.com/fuzzball/advanced-features/opencode-access
+  - https://docs.ciq.com/fuzzball/workflow-catalog/creating
+servers:
+- url: https://depot.ciq.com
+security:
+- bearer: []
+tags:
+- name: Models
+paths:
+  /v1/models:
+    get:
+      operationId: get_v1_models
+      tags:
+      - Models
+      summary: GET /v1/models
+      x-source: https://docs.ciq.com/fuzzball/advanced-features/serving-a-model
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetV1ModelsResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -H \"Authorization: Bearer YOUR-FUZZBALL-TOKEN\"  -H \"x-litellm-api-key: sk-fb-YOUR-API-KEY\"  https://ENDPOINT-URL/v1/models\n A healthy response names the model: \n {\"data\":[{\"id\":\"openai/gpt-oss-20b\",\"object\":\"model\",\"created\":1677610602,\"owned_by\":\"openai\"}],\"object\":\"list\"}\n An endpoint started with Scope=public needs only the API key, and is served without any\nFuzzball authentication, so use"
+components:
+  schemas:
+    GetV1ModelsResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              object:
+                type: string
+              created:
+                type: integer
+              owned_by:
+                type: string
+        object:
+          type: string
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer

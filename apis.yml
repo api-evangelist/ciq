@@ -97,7 +97,8 @@ common:
 
 apis:
 - name: CIQ API
-  description: API documentation is hosted at docs.ciq.com, but no machine‑readable contract was discovered.
+  description: >-
+    API documentation is hosted at docs.ciq.com, but no machine‑readable contract was discovered.
   humanURL: https://docs.ciq.com
   baseURL: null
   x-coverage:
@@ -109,20 +110,90 @@ apis:
       status: 404
     checked: '2026-10-08'
   aid: ciq:ciq-api-2
-- aid: ciq:ciq-api
-  name: CIQ API
-  description: 'CIQ API as documented publicly: 11 operations. Contract generated from the documentation by API Evangelist (2026-10-08); not the
-
-    provider''s own document.'
-  humanURL: https://docs.ciq.com/elm/admin-guides/api
+- aid: ciq:ciq-agent-api
+  name: CIQ Agent API
+  description: The Agent API from CIQ — 1 operation(s) for agent.
+  humanURL: https://docs.ciq.com
   baseURL: https://depot.ciq.com
+  tags:
+  - Agent
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/ciq-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/ciq-agent-api-openapi.yml
   - type: JSONSchema
     url: json-schema/ciq-get-v1-models-response-schema.json
-
+- aid: ciq:ciq-ciq-api-api
+  name: CIQ CIQ API
+  description: The CIQ API API from CIQ — 2 operation(s) for ciq api.
+  humanURL: https://docs.ciq.com
+  baseURL: https://depot.ciq.com
+  tags:
+  - CIQ API
+  properties:
+  - type: OpenAPI
+    url: openapi/ciq-ciq-api-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/ciq-get-v1-models-response-schema.json
+- aid: ciq:ciq-data-api
+  name: CIQ Data API
+  description: The Data API from CIQ — 1 operation(s) for data.
+  humanURL: https://docs.ciq.com
+  baseURL: https://depot.ciq.com
+  tags:
+  - Data
+  properties:
+  - type: OpenAPI
+    url: openapi/ciq-data-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/ciq-get-v1-models-response-schema.json
+- aid: ciq:ciq-dlv2-api
+  name: CIQ Dlv2 API
+  description: The Dlv2 API from CIQ — 4 operation(s) for dlv2.
+  humanURL: https://docs.ciq.com
+  baseURL: https://depot.ciq.com
+  tags:
+  - Dlv2
+  properties:
+  - type: OpenAPI
+    url: openapi/ciq-dlv2-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/ciq-get-v1-models-response-schema.json
+- aid: ciq:ciq-models-api
+  name: CIQ Models API
+  description: The Models API from CIQ — 1 operation(s) for models.
+  humanURL: https://docs.ciq.com
+  baseURL: https://depot.ciq.com
+  tags:
+  - Models
+  properties:
+  - type: OpenAPI
+    url: openapi/ciq-models-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/ciq-get-v1-models-response-schema.json
+- aid: ciq:ciq-path-api
+  name: CIQ Path API
+  description: The Path API from CIQ — 1 operation(s) for path.
+  humanURL: https://docs.ciq.com
+  baseURL: https://depot.ciq.com
+  tags:
+  - Path
+  properties:
+  - type: OpenAPI
+    url: openapi/ciq-path-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/ciq-get-v1-models-response-schema.json
+- aid: ciq:ciq-sources-api
+  name: CIQ Sources API
+  description: The Sources API from CIQ — 1 operation(s) for sources.
+  humanURL: https://docs.ciq.com
+  baseURL: https://depot.ciq.com
+  tags:
+  - Sources
+  properties:
+  - type: OpenAPI
+    url: openapi/ciq-sources-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/ciq-get-v1-models-response-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

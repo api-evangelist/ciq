@@ -1,0 +1,50 @@
+openapi: 3.2.0
+info:
+  title: CIQ Sources API
+  version: '2026-10-08'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-08: 11 operation(s) read from 9 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; CIQ has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 4
+    documentation: 7
+    pages-with-code: 9
+    pages-read: 9
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-08'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.ciq.com/elm/admin-guides/api
+  - https://docs.ciq.com/rlc-h/getting-started
+  - https://docs.ciq.com/rlc-ai/getting-started
+  - https://docs.ciq.com/ciq-portal/getting-started
+  - https://docs.ciq.com/depot/depot-client/get-started/containers
+  - https://docs.ciq.com/elm/admin-guides/hosts-and-groups
+  - https://docs.ciq.com/fuzzball/advanced-features/serving-a-model
+  - https://docs.ciq.com/fuzzball/advanced-features/opencode-access
+  - https://docs.ciq.com/fuzzball/workflow-catalog/creating
+servers:
+- url: https://depot.ciq.com
+security:
+- bearer: []
+tags:
+- name: Sources
+paths:
+  /api/v1/sources/:
+    get:
+      operationId: get_api_v1_sources
+      tags:
+      - Sources
+      summary: Example - list sources
+      x-source: https://docs.ciq.com/elm/admin-guides/api
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+components:
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer

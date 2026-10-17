@@ -1,0 +1,52 @@
+openapi: 3.2.0
+info:
+  title: CIQ Path API
+  version: '2026-10-08'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-08: 11 operation(s) read from 9 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; CIQ has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 4
+    documentation: 7
+    pages-with-code: 9
+    pages-read: 9
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-08'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.ciq.com/elm/admin-guides/api
+  - https://docs.ciq.com/rlc-h/getting-started
+  - https://docs.ciq.com/rlc-ai/getting-started
+  - https://docs.ciq.com/ciq-portal/getting-started
+  - https://docs.ciq.com/depot/depot-client/get-started/containers
+  - https://docs.ciq.com/elm/admin-guides/hosts-and-groups
+  - https://docs.ciq.com/fuzzball/advanced-features/serving-a-model
+  - https://docs.ciq.com/fuzzball/advanced-features/opencode-access
+  - https://docs.ciq.com/fuzzball/workflow-catalog/creating
+servers:
+- url: https://depot.ciq.com
+security:
+- bearer: []
+tags:
+- name: Path
+paths:
+  /path/to/your/file:
+    get:
+      operationId: get_path_to_your_file
+      tags:
+      - Path
+      summary: GET /path/to/your/file
+      x-source: https://docs.ciq.com/ciq-portal/getting-started
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -u YOUR_USERNAME:YOUR_TOKEN -O https://depot.ciq.com/path/to/your/file\n wget --user=YOUR_USERNAME --password=YOUR_TOKEN https://depot.ciq.com/path/to/your/file\n Other Methods \n Depot Client : Automated repository configuration \n Rsync : Mirror repositories locally \n Reposync : Mirror via DNF/YUM \n Red Hat Satellite : Satellite integration \n Cloud Marketplace Customers Images purchased through"
+components:
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer

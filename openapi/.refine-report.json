@@ -1,0 +1,29 @@
+{
+  "provider": "ciq",
+  "sources": [
+    "_ae-authored/ciq-openapi-generated.yml"
+  ],
+  "outputs": [
+    "ciq-agent-api-openapi.yml",
+    "ciq-ciq-api-api-openapi.yml",
+    "ciq-data-api-openapi.yml",
+    "ciq-dlv2-api-openapi.yml",
+    "ciq-models-api-openapi.yml",
+    "ciq-path-api-openapi.yml",
+    "ciq-sources-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "ciq-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "ciq-openapi-generated.yml: tagged paths GET / -> CIQ API",
+    "ciq-openapi-generated.yml: tagged paths GET /api/v1/ -> CIQ API",
+    "ciq-openapi-generated.yml: tagged paths GET /api/v1/sources/ -> Sources",
+    "ciq-openapi-generated.yml: declared missing tag: CIQ API",
+    "ciq-openapi-generated.yml: declared missing tag: Sources",
+    "apis.yml register: written (+7 apis, 8 total)"
+  ],
+  "skipped": []
+}
