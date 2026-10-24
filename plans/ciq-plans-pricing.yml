@@ -76,3 +76,118 @@ plans:
   price: 150
   description: Enterprise Ansible automation
 docs: https://ciq.com/pricing
+x-canonical:
+  generated: '2026-10-23'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: RLC Pro Self Support
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: RLC Pro Standard Support
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: RLC Pro Premium Support
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: RLC Pro Hardened Self Support
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: RLC Pro Hardened Standard Support
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: RLC Pro Hardened Premium Support
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: RLC Pro AI Self Support
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: RLC Pro AI Standard Support
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: RLC Pro AI Premium Support
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Fuzzball Self Support
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Fuzzball Standard Support
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Fuzzball Premium Support
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Warewulf Pro Self Support
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Warewulf Pro Standard Support
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Warewulf Pro Premium Support
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Ascender Pro Self Support
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Ascender Pro Standard Support
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Ascender Pro Premium Support
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
